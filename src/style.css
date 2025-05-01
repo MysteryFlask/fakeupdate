@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    height: 100vh;
+}
+
+.working {
+    position: absolute;
+    bottom: 0;
+}
+  
+div {
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    position: relative;
+}
+  
+.spinner {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: 4px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1.2s linear infinite;
+}
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.working {
+    position: static;
+}
+  
+.restart {
+    position: absolute;
+    bottom: 100px;
+}
