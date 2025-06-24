@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress(prevProgress => {return prevProgress >= 100 ? 0 : prevProgress + 1})
-    }, 1000)
+    }, 3000)
 
     return () => {
       clearInterval(interval)
@@ -18,7 +18,9 @@ function App() {
     <>
         <div>
           <div>
-            <div className='spinner'></div>
+            <div className='spinner'>
+              <span className='spinnercharacter'>&#xE150;</span>
+            </div>
             <span className='working'>Working on updates {progress}%</span>
             <span className='on'>Please keep your computer on.</span>
             <span className='restart'>Your computer may restart a few times.</span>
